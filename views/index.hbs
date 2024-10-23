@@ -6,8 +6,48 @@
     <title>Document</title>
 </head>
 <body>
-   {{#each elements as |element|}}
-     <h1>The random num is {{element}}</h1>
+  <style>
+     .Metal{
+  background-color: rgb(218, 218, 39);
+ }
+ .NoMetal{
+  background-color: rgb(28, 187, 28);
+ }
+  .Alcalino{
+  background-color: rgb(173, 98, 173);
+ }
+ .Alcalinotérreo{
+  background-color: rgb(136, 54, 136);
+ }
+ .MetalDeTransición{
+  background-color:  rgb(221, 168, 69);
+ }
+ .Lantánido{
+  background-color:  rgb(172, 128, 46);
+ }
+ .Actínido{
+  background-color: rgb(128, 67, 128);
+ }
+  .Metaloide{
+  background-color: rgb(162, 231, 162);
+ }
+  .Halógeno{
+  background-color: rgb(108, 183, 245);
+ }
+  .GasNoble{
+  background-color: rgb(63, 158, 236);
+ }
+
+  </style>
+   {{#each elements as |row| }}
+  {{#each row }}
+   <div class="element {{this.type}}" >
+    <h1>{{this.symbol}}</h1>
+    <h2>{{this.name}}</h2>
+   </div>
+    {{/each}}
+    <div class=""></div>
      {{/each}}
+      <div class=""></div>
 </body>
 </html>
