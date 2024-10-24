@@ -4,7 +4,18 @@ const app = express();
 const {engine} = require("express-handlebars");
 const path = require("path")
 const mainPageRote = require("./routes/mainPage")
-app.engine("hbs", engine());
+const compare = require("./helpers/hbs/compere")
+const iterate = require("./helpers/hbs/iterateWithNumbers")
+const isNotNull = require("./helpers/hbs/moreOrLess")
+
+
+app.engine("hbs", engine({
+    helpers:{
+        compare: compare,
+        iterate: iterate,
+        isNotNull: isNotNull,
+    }
+}));
 app.set("view engine", "hbs");
 
 app.set("views","views")

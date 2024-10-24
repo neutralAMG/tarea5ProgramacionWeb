@@ -1,7 +1,9 @@
-function iterateWithNumber (n, block) {
-    let accum = '';
+function iterateWithNumber (n) {
+    let accum = [];
     for (let i = 0; i < n; ++i) {
-      accum += block.fn(i);
+      accum.push(1)
     }
     return accum;
   }
+
+  module.exports = iterateWithNumber
