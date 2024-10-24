@@ -111,7 +111,7 @@ const elements = [
    [
       { id: 55, symbol: "Cs", name: "Cesio", type: "Alcalino" },
       { id: 56, symbol: "Ba", name: "Bario", type: "Alcalinotérreo" },
-      { id: "57-71", symbol: "La-Lu", name: "Lantánido", type: "Lantánido" },
+      { id: "57-71", symbol: "la-lu", name: "Lantánido", type: "Lantánido" },
        { id: 72, symbol: "Hf", name: "Hafnio", type: "MetalDeTransición" },
       { id: 73, symbol: "Ta", name: "Tántalo", type: "MetalDeTransición" },
       { id: 74, symbol: "W", name: "Wolframio", type: "MetalDeTransición" },
