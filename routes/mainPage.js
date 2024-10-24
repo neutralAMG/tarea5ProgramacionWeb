@@ -112,7 +112,7 @@ const elements = [
       { id: 55, symbol: "Cs", name: "Cesio", type: "Alcalino" },
       { id: 56, symbol: "Ba", name: "Bario", type: "Alcalinotérreo" },
       { id: "57-71", symbol: "la-lu", name: "Lantánido", type: "Lantánido" },
-       { id: 72, symbol: "Hf", name: "Hafnio", type: "MetalDeTransición" },
+      { id: 72, symbol: "Hf", name: "Hafnio", type: "MetalDeTransición" },
       { id: 73, symbol: "Ta", name: "Tántalo", type: "MetalDeTransición" },
       { id: 74, symbol: "W", name: "Wolframio", type: "MetalDeTransición" },
       { id: 75, symbol: "Re", name: "Renio", type: "MetalDeTransición" },
@@ -172,7 +172,7 @@ const elements = [
       null,
       null,
       null,
-   { id: 89, symbol: "Ac", name: "Actinio", type: "Actínido" },
+      { id: 89, symbol: "Ac", name: "Actinio", type: "Actínido" },
       
       { id: 90, symbol: "Th", name: "Torio", type: "Actínido" },
       { id: 91, symbol: "Pa", name: "Protactinio", type: "Actínido" },
