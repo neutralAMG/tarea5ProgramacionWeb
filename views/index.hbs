@@ -9,15 +9,17 @@
   <style>
 
     .container{
-      display: grid;
-      grid-template-columns: repeat(18,1fr);
+
+      position: relative;
     width: 100%;
      max-width: 100vw;
       gap: 5px;
     }
   .element{
-     width: 100%;
+       width: 100px;
       height: 100px;
+      position: absolute;
+       margin: 50px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -46,11 +48,16 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3)
     .symbol{
       display: block;
     }
-    .leyend, .leyend-Title{
+    .leyend{
+   
+    }
+    .leyend, .leyend-Title{  
+       position: absolute;
+      bottom: 0;
       display: flex;
       justify-content: center;
       align-items:center;
-      width: 100%;
+      width: 90%;
       gap: 10px;
     }
   .leyend-Title{
@@ -97,25 +104,16 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3)
 }
   </style>
 
-   <div class="container">
+
    
    {{#each elements as |row| }}
-    {{#each row}}
-    {{#if (isNotNull this)}}
-    <div class=" element element{{@../index}} {{this.type}}" >
-    <h1 class="symbol">{{this.symbol}}</h1>
-   </div>
-   {{/if}}
-   {{#if (compare this)}}
-  <div class="element element{{@../index}} empty-div" >
  
+    <div class=" element element{{@index}} {{this.type}}" style="top: {{ multiply this.x 102}}px; left:{{ multiply this.y 101}}px " >
+    <h1 class="symbol"title="{{this.name}}" >{{this.symbol}}</h1>
    </div>
-   {{/if}}
-   {{/each}}
+
     {{/each}}
  
-
-</div>
 
 <div class="leyend-Title">
   <h2>LEYENDA</h2> 

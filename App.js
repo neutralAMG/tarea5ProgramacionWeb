@@ -4,14 +4,14 @@ const app = express();
 const {engine} = require("express-handlebars");
 const path = require("path")
 const mainPageRote = require("./routes/mainPage")
-const compare = require("./helpers/hbs/compere")
+const multiply = require("./helpers/hbs/multiply")
 const iterate = require("./helpers/hbs/iterateWithNumbers")
 const isNotNull = require("./helpers/hbs/moreOrLess")
 
 
 app.engine("hbs", engine({
     helpers:{
-        compare: compare,
+        multiply: multiply,
         iterate: iterate,
         isNotNull: isNotNull,
     }
